@@ -11,16 +11,16 @@
       "access_key": "{{user `aws_access_key_id`}}",
       "secret_key": "{{user `aws_secret_access_key`}}",
       "token": "{{user `aws_session_token`}}",
-      "region": "us-west-2",
-      "source_ami": "ami-29f80351",
+      "region": "us-east-2",
+      "source_ami": "ami-64300001",
       "instance_type": "t2.micro",
       "ssh_username": "ec2-user",
       "associate_public_ip_address": "true",
       "ami_name": "docker-production-aws-ecs-base {{timestamp}}",
       "tags": {
         "Name": "Docker Production AWS ECS Base Image",
-        "SourceAMI": "ami-29f80351",
-        "DockerVersion": "17.03.2-ce",
+        "SourceAMI": "ami-64300001",
+        "DockerVersion": "18.03.1-ce",
         "ECSAgentVersion": "1.14.5"
       }
     }
